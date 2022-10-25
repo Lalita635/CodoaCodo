@@ -1,0 +1,149 @@
+<!-- Creado por Maria Laura Peralta -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Trabajo Integrador</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+            <img src="./img/codoacodo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Conf Bs As
+            </a>
+        <div class="opciones">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">La conferencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Los oradores</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">El lugar y la fecha</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Convertite en orador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tickets.html" style="color: green;">Comprar tickets</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        </div>
+    </nav>
+<!-- Fin Navbar -->
+
+<!-- Tickets -->
+<section class="container">
+    <div class="d-flex justify-content-center align-items-center gap-2 mt-5 cuadrados">
+        <div class="border border-primary d-flex flex-column justify-content-center align-items-center p-2">
+            <p class="fs-4">Estudiante</p>
+            <p>Tienen un descuento</p>
+            <p class="fw-bold">80%</p>
+            <p class="fw-light">* presentar documentacion</p>
+        </div>
+        <div class="border border-success d-flex flex-column justify-content-center align-items-center p-2">
+            <p class="fs-4">Trainee</p>
+            <p>Tienen un descuento</p>
+            <p class="fw-bold">50%</p>
+            <p class="fw-light">* presentar documentacion</p>
+        </div>
+        <div class="border border-warning d-flex flex-column justify-content-center align-items-center p-2">
+            <p class="fs-4">Junior</p>
+            <p>Tienen un descuento</p>
+            <p class="fw-bold">15%</p>
+            <p class="fw-light">* presentar documentacion</p>
+        </div>
+    </div>
+    
+    <p class="text-center mt-3 mb-0">VENTA</p>
+    <h2 class="text-center m-2 p-1 fw-semibold">VALOR DE TICKET $200</h2>
+    <!-- Formulario de compra -->
+        <form class="w-50  mx-auto">
+            <div class="row ">
+                <div class="col p-2">
+                    <input type="text" class="form-control nombre" placeholder="Nombre" aria-label="First name" required>
+                </div>
+                <div class="col p-2">
+                    <input type="text" class="form-control apellido" placeholder="Apellido" aria-label="Last name" required>
+                </div>
+                <div class="row p-2 mx-auto">
+                    <input type="text" class="form-control correo" placeholder="Correo" aria-label="Mail" required>
+                </div>
+                <div class="col-md-6 p-2">
+                    <input type="number" class="form-control cantidad" placeholder="Cantidad" aria-label="Items" id="items" required>
+                </div>
+                <div class="col-md-6 p-2">
+                    <!--<label for="select" class="p-2">Categoria</label>-->
+                    <select class="form-select " aria-label="Default select example" id="select" required>
+                        <option value="1">Estudiante</option>
+                        <option value="2">Trainee</option>
+                        <option value="3">Junior</option>
+                    </select>
+                </div>
+                <div class="col-12 rounded mx-auto blue d-flex align-items-center">
+                    <p class="p-2 m-0 total">Total a pagar (con descuento): $</p>
+                </div>
+            <br>
+                <div class="col-md-6 p-2">
+                    <input type="reset" class="btn btn-success green2 border-0 fw-bold w-100" value="Borrar">
+                </div>
+                <div class="col-md-6 p-2">
+                    <input type="submit" class="btn btn-success green2 border-0 fw-bold w-100 resumen" value="Resumen">
+                </div>
+            </div>
+        </form>
+    <!-- Formulario de compra -->
+</section>    
+<!-- FIin Tickets -->
+<br>
+<!-- Footer -->
+<footer class="text-center" style="background-color: #45637d;">
+    <!-- Contenedor Links -->
+    <div class="container p-4">
+        <section class="text-center">
+            <div class="row">
+                <div class="col-lg-1 col-md-12 mb4 mb-md-0"></div>
+                <div class="col-lg-1 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Contáctanos</a>
+                </div>
+                <div class="col-lg-1 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Prensa</a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Conferencias</a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Términos y Condiciones</a>
+                </div>
+                <div class="col-lg-1 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Privacidad</a>
+                </div>
+                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                    <a href="#" style="text-decoration: none; color: white;">Estudiantes</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Fin Contenedor Links -->
+</footer>
+<!-- Fin Footer -->
+<script src="compra.js"></script>
+</body>
+</html>
